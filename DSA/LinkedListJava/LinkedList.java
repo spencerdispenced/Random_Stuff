@@ -19,14 +19,27 @@ public class LinkedList {
         if (head == null) {
             head = new_node;
         } else {
-            Node last = head;
-            while (last.next != null) {
-                last = last.next;
+            Node currNode = head;
+            while (currNode.next != null) {
+                currNode = currNode.next;
             }
 
-            last.next = new_node;
+            currNode.next = new_node;
         }
 
+    }
+
+    public void deleteTail() {
+        Node currNode = head;
+
+        if (currNode == null || currNode.next == null) {
+            currNode = null;
+        }
+
+        while (currNode.next.next != null) {
+            currNode = currNode.next;
+        }
+        currNode.next = null;
     }
 
     public void printList() {

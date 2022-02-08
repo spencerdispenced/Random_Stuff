@@ -12,6 +12,8 @@ public class App {
         ll.insertAtHead(1);
         ll.insertAtHead(1);
         ll.insertAtHead(3);
+        ll.insertAtTail(8);
+        ll.deleteTail();
 
         ll.printList();
     }
