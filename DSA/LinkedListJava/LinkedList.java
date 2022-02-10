@@ -32,8 +32,10 @@ public class LinkedList {
     public void deleteTail() {
         Node currNode = head;
 
-        if (currNode == null || currNode.next == null) {
-            currNode = null;
+        // Remove Head if only one node in list
+        if (head == null || head.next == null) {
+            head = null;
+            return;
         }
 
         while (currNode.next.next != null) {
@@ -42,14 +44,31 @@ public class LinkedList {
         currNode.next = null;
     }
 
+    public void deleteNode(int target_data) {
+        Node currNode = head;
+
+        if (head.data == target_data) {
+            head = head.next;
+            return;
+        }
+
+        while (currNode.next.data != target_data) {
+            currNode = currNode.next;
+        }
+
+        currNode.next = currNode.next.next;
+    }
+
     public void printList() {
         Node currNode = head;
 
-        System.out.println("LinkedList: ");
+        String output = "LinkedList: ";
 
         while (currNode != null) {
-            System.out.println(currNode.data + " ");
+            output += currNode.data + " -> ";
             currNode = currNode.next;
         }
+
+        System.out.println(output);
     }
 }

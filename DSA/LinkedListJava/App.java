@@ -6,15 +6,19 @@ public class App {
 
         ll.insertAtTail(5);
         ll.insertAtTail(1);
-        ll.insertAtTail(7);
-        ll.insertAtTail(5);
-
+        ll.insertAtTail(6);
         ll.insertAtHead(1);
         ll.insertAtHead(1);
         ll.insertAtHead(3);
         ll.insertAtTail(8);
-        ll.deleteTail();
 
         ll.printList();
+
+        ll.deleteNode(6);
+        ll.printList();
+        ll.deleteNode(8);
+
+        ll.printList();
+
     }
 }
