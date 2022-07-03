@@ -5,6 +5,11 @@ import java.util.HashMap;
 public class ValidAnagram {
 
     public static boolean findAnagram(String s1, String s2) {
+
+        /*
+         * Add both strings to hashmaps with counters for each character, compare both
+         * hashmaps
+         */
         if (s1.length() != s2.length())
             return false;
 
