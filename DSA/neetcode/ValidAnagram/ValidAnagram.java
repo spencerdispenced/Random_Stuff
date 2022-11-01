@@ -1,4 +1,4 @@
-package DSA.ValidAnagram;
+package DSA.neetcode.ValidAnagram;
 
 import java.util.HashMap;
 
