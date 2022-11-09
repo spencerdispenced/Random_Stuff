@@ -1,4 +1,4 @@
-package DSA.neetcode.TwoSum;
+package DSA.leetcode.TwoSum;
 
 import java.util.HashMap;
 

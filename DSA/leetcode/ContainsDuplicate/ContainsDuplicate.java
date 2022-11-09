@@ -1,4 +1,4 @@
-package DSA.neetcode.ContainsDuplicate;
+package DSA.leetcode.ContainsDuplicate;
 
 import java.util.HashSet;
 import java.util.Set;
