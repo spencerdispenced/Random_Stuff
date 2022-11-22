@@ -3,6 +3,8 @@ package DSA.leetcode.ContainsDuplicate;
 import java.util.HashSet;
 import java.util.Set;
 
+// https://leetcode.com/problems/contains-duplicate/
+
 public class ContainsDuplicate {
 
     public static boolean containsDuplicate(int[] nums) {

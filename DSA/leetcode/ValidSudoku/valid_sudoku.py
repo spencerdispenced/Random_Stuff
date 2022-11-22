@@ -1,6 +1,8 @@
 
 from collections import defaultdict
 
+# https://leetcode.com/problems/valid-sudoku/S
+
 
 def is_valid_sudoku(board):
     # Time O(9^2)

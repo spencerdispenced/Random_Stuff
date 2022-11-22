@@ -1,4 +1,5 @@
 
+# https://leetcode.com/problems/product-of-array-except-self/S
 
 """
     [1, 2, 3, 4]
@@ -53,6 +54,30 @@ def prod_of_array_excp_self(nums):
     return output
 
 
+def productExceptSelf_onePass(nums):
+    # Time: O(n), one pass
+
+    # Calculate prefixes starting with front of array
+    # Calculate postfixes starting with end of array
+    # After they overlap, will create desired output
+    output = [1] * (len(nums))
+    prefix = 1
+    postfix = 1
+
+    for i in range(len(nums)):
+        # Calculate prefixes starting with front of array
+        # Calculate prefix in output by multiplying by current prefix
+        output[i] *= prefix
+        # Update prefix by multiplying by current num in array
+        prefix *= nums[i]
+
+        # Calculate postfixes starting with end of array
+        output[-1-i] *= postfix
+        postfix *= nums[-1-i]
+    return output
+
+
 if __name__ == '__main__':
     nums = [1, 2, 3, 4]
     print(prod_of_array_excp_self(nums))  # [24,12,8,6]
+    print(productExceptSelf_onePass(nums))

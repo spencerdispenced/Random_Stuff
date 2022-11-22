@@ -2,6 +2,8 @@ package DSA.leetcode.TwoSum;
 
 import java.util.HashMap;
 
+// https://leetcode.com/problems/two-sum/S
+
 public class TwoSum {
 
     // Same as find_indexes but using HashMap

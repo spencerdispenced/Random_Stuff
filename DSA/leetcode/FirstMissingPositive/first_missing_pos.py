@@ -1,5 +1,3 @@
-
-
 def smallest_missing_int(nums):
     # Time: O(n)
 

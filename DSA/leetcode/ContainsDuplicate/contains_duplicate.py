@@ -1,4 +1,5 @@
 
+# https://leetcode.com/problems/contains-duplicate/
 
 def contains_duplicate_sort(nums):
     # Time: O(nlogn)

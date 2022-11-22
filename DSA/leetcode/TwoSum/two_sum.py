@@ -2,6 +2,7 @@
 
 # given array and target, find indexes that return target
 
+# https://leetcode.com/problems/two-sum/
 
 def find_indexes_brute(nums, target):
     # Time: O(n^2)
