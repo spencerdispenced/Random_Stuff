@@ -1,4 +1,4 @@
-package DSA.leetcode.TwoSum;
+package DSA.ArrayHashing.TwoSum;
 
 import java.util.HashMap;
 
@@ -38,19 +38,20 @@ public class TwoSum {
 
     }
 
+    public static void printTwoSum(int[] arr) {
+        System.out.print("[" + arr[0] + "," + arr[1] + "]\n");
+
+    }
+
     public static void main(String[] args) {
         int[] arr1 = { 2, 7, 11, 15 };
         int[] arr1Ret = findTwoSum(arr1, 9);
 
-        for (int index : arr1Ret) {
-            System.out.println(index);
-        }
+        printTwoSum(arr1Ret);
 
         int[] arr2 = { 5, 7, 11, 15 };
         int[] arr2Ret = findTwoSum(arr2, 18);
 
-        for (int index : arr2Ret) {
-            System.out.println(index);
-        }
+        printTwoSum(arr2Ret);
     }
 }

@@ -1,4 +1,4 @@
-package DSA.LinkedListJava;
+package DSA.DS.LinkedListJava;
 
 public class App {
     public static void main(String[] args) {

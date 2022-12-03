@@ -1,4 +1,4 @@
-package DSA.leetcode.ValidAnagram;
+package DSA.ArrayHashing.ValidAnagram;
 
 import java.util.HashMap;
 

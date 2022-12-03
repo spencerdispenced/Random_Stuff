@@ -1,4 +1,4 @@
-package DSA.FindTheIslands;
+package DSA.Graphs.FindTheIslands;
 
 public class runner {
     static char[][] grid = { { '1', '1', '1', '1', '0' }, { '1', '1', '0', '1', '0' }, { '1', '1', '0', '0', '0' },

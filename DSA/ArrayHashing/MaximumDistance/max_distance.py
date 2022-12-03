@@ -1,4 +1,5 @@
 
+# Find max distance betwwen same elements in array
 
 def max_distance(nums):
     # Time: O(n)
@@ -9,9 +10,10 @@ def max_distance(nums):
         if nums[i] not in uniques:
             uniques[nums[i]] = i
         else:
-            current_distance = i - uniques.get(nums[i])
-            if current_distance > max_distance:
-                max_distance = current_distance
+            # current_distance = i - uniques.get(nums[i])
+            # if current_distance > max_distance:
+            #     max_distance = current_distance
+            max_distance = max(max_distance, i - uniques.get(nums[i]))
 
     return max_distance
 

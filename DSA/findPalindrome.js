@@ -19,7 +19,6 @@ const findPalindrome = (number) => {
     else {
         console.log(`${number} is not a Palindrom`);
     }
-
 }
 
 

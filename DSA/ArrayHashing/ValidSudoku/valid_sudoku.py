@@ -24,6 +24,7 @@ def is_valid_sudoku(board):
             rows[r].add(board[r][c])
             squares[(r // 3, c // 3)].add(board[r][c])
 
+    print(squares)
     return True
 
 

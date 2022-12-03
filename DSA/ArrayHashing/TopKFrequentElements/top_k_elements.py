@@ -11,14 +11,18 @@ def top_k_frequent(nums: list[int], k: int) -> list[int]:
     for number in nums:
         counts[number] = 1 + counts.get(number, 0)
 
-    for count, value in counts.items():
-        # at index 'value', insert frequency of occurance into list
-        freq[value].append(count)
+    for number, count in counts.items():
+        # at index 'frequency', insert 'value' of occurance into list
+        freq[count].append(number)
 
+    print(counts)
+    print(freq)
     res = []
+    # iterate through list backwards, value of highest indexes get appended first
     for i in range(len(freq) - 1, 0, -1):
         for n in freq[i]:
             res.append(n)
+            # when len of result is same as top k, return
             if len(res) == k:
                 return res
 
@@ -26,5 +30,12 @@ def top_k_frequent(nums: list[int], k: int) -> list[int]:
 if __name__ == '__main__':
     nums = [1, 1, 1, 2, 2, 3]
     k = 2
-
     print(top_k_frequent(nums, k))
+
+    nums2 = [1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3]
+    k2 = 2
+    print(top_k_frequent(nums2, k2))
+
+    nums3 = [1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3]
+    k3 = 2
+    print(top_k_frequent(nums3, k3))
