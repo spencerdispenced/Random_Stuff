@@ -1,6 +1,19 @@
 
 # https://leetcode.com/problems/contains-duplicate/
 
+
+"""
+1. Create set
+
+2. Iterate over list/string, check if value already present in set
+    If so: return true
+
+3. If no duplicates found, return false outside loop
+
+
+"""
+
+
 def contains_duplicate_sort(nums):
     # Time: O(nlogn)
     # Space: O(1)

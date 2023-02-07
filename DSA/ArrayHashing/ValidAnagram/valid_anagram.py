@@ -1,6 +1,18 @@
 
 # https://leetcode.com/problems/valid-anagram/
 
+
+""" 
+1. Check that length of both strings matches
+
+2. Count all occurances of each letter in both strings
+    - Store in separate hashmap for each string, <char, count>
+
+ 3. Iterate over one of the hashmaps, check the count against
+    the values in the other hashmap, must be exactly equal
+"""
+
+
 def valid_anagram(s, t):
     # Time: O(s + t)
     # Space: O(s + t)

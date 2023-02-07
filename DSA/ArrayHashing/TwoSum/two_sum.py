@@ -4,6 +4,28 @@
 
 # https://leetcode.com/problems/two-sum/
 
+
+"""
+1. Create hashmap for already checked values with index: <val, index>
+
+2. Iterate over nums list:
+
+    3. Inside loop: Take target - current num, store in variable 'diff'
+
+    4. Check if 'diff' value is already stored in hashmap
+
+        If so: Grab index of 'diff' from hashmap
+               Return 'diff' index with current index as a list
+
+        Else: Store current value and index in hashmap
+              Continue loop
+
+5. Return default values in list if two sum not found
+
+
+"""
+
+
 def find_indexes_brute(nums, target):
     # Time: O(n^2)
     # Space: O(1)

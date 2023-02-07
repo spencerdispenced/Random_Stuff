@@ -1,3 +1,4 @@
 node_modules/
 test_playground.py
 non_track/
+*.exe

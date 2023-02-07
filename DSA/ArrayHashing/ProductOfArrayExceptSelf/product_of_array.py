@@ -1,6 +1,21 @@
 
 # https://leetcode.com/problems/product-of-array-except-self/S
 
+
+# Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
+
+# The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
+
+# You must write an algorithm that runs in O(n) time and without using the division operation.
+
+
+# Input: nums = [1,2,3,4]
+# Output: [24,12,8,6]
+
+
+# Input: nums = [-1,1,0,-3,3]
+# Output: [0,0,9,0,0]
+
 """
     [1, 2, 3, 4]
     1. Calculate all prefixes in array
@@ -33,6 +48,27 @@
                 a. start with postfix 1
                 b. Increment (*=) output by multiplyig by current postfix
                 c. Increment (*=) postfix by multiplying by current value
+
+
+
+1. Create prefix and postfix variables, set to 1
+   Create output array of size of input array
+
+2. loop over input array forwards:
+
+    2.1: Add current prefix to corresponding index in output array
+
+    2.2: Update prefix by multiplying prefix by number at current index
+
+    - Output array will contain all prefixes
+
+3. Loop over input array backwards:
+
+    3.1: Update output array by multiplying prefix at current index of output array by postfix
+
+    3.2: Update postfix by multiplying postfix by number in current index of input array
+
+4. Return output array
             
 """
 
