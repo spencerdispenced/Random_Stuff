@@ -1,5 +1,5 @@
 
-package DSA.TwoPointers.ThreeSum;
+package DSA_Problems.TwoPointers.ThreeSum;
 
 import java.util.ArrayList;
 import java.util.Arrays;

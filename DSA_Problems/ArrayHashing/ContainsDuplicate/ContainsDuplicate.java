@@ -1,4 +1,4 @@
-package DSA.ArrayHashing.ContainsDuplicate;
+package DSA_Problems.ArrayHashing.ContainsDuplicate;
 
 import java.util.HashSet;
 import java.util.Set;

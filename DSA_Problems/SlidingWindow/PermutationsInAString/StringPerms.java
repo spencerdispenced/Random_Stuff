@@ -1,4 +1,4 @@
-package DSA.SlidingWindow.PermutationsInAString;
+package DSA_Problems.SlidingWindow.PermutationsInAString;
 
 import java.util.Arrays;
 

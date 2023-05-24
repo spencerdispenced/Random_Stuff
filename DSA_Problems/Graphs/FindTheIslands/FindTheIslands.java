@@ -1,4 +1,4 @@
-package DSA.Graphs.FindTheIslands;
+package DSA_Problems.Graphs.FindTheIslands;
 
 class FindTheIslands {
     public int numIslands(char[][] grid) {

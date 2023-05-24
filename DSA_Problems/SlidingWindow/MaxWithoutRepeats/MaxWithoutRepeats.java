@@ -1,5 +1,5 @@
 
-package DSA.SlidingWindow.MaxWithoutRepeats;
+package DSA_Problems.SlidingWindow.MaxWithoutRepeats;
 
 import java.util.HashSet;
 

@@ -1,4 +1,4 @@
-package DSA.ArrayHashing.ValidAnagram;
+package DSA_Problems.ArrayHashing.ValidAnagram;
 
 import java.util.HashMap;
 

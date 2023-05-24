@@ -1,4 +1,4 @@
-package DSA.ArrayHashing.GroupAnagrams;
+package DSA_Problems.ArrayHashing.GroupAnagrams;
 
 import java.util.ArrayList;
 import java.util.HashMap;

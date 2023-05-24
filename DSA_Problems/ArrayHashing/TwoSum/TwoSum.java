@@ -1,4 +1,4 @@
-package DSA.ArrayHashing.TwoSum;
+package DSA_Problems.ArrayHashing.TwoSum;
 
 import java.util.HashMap;
 

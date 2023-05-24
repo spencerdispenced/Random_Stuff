@@ -1,4 +1,4 @@
-package DSA.ArrayHashing.MaxConseqSequence;
+package DSA_Problems.ArrayHashing.MaxConseqSequence;
 
 import java.util.HashSet;
 

@@ -1,4 +1,4 @@
-package DSA.ArrayHashing.EncodeDecodeStrings;
+package DSA_Problems.ArrayHashing.EncodeDecodeStrings;
 
 import java.util.ArrayList;
 import java.util.Arrays;
