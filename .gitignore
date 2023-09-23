@@ -3,3 +3,7 @@ test_playground.py
 non_track/
 *.exe
 .vscode
+*.csproj
+*.vs
+*.sln
+obj/
